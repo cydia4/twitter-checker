@@ -1,26 +1,6 @@
-################################
-#                              #
-# Coded By |~/M7md             #
-#                              #
-# Telegram | cydia4            #
-#                              #
-#                              #
-#                              #
-################################
 use LWP::UserAgent;
 system('cls');
 system('color 1e');
-print '
-################################
-#                              #
-# Coded By |~/M7md             #
-#                              #
-# Telegram | cydia4            #
-#                              #
-# Twitter Checker              #
-#                              #
-################################
-';
 print qq(
 Enter user File:
 > );
@@ -39,9 +19,9 @@ if ($resp->content=~ /false/) {
 	print "==========================================
 		Taken ($U)
 ==========================================\n";
-	open(R0T,">>Taken.txt");
-	print R0T "$U\n";
-	close(R0T);
+	open(FORFUN,">>Taken.txt");
+	print FORFUN "$U\n";
+	close(FORFUN);
 	
 }
 else {
